@@ -16,10 +16,9 @@
 Cartographer ROS for the Toyota HSR
 ===================================
 
-|build| |docs|
-
-Purpose
-=======
+.. toctree::
+   :maxdepth: 2
+   :hidden:
 
 `Cartographer`_ is a system that provides real-time simultaneous localization
 and mapping `SLAM`_ across multiple platforms and sensor configurations. This
@@ -48,3 +47,35 @@ support at our `Contribution page`_.
     :alt: Documentation Status
     :scale: 100%
     :target: https://google-cartographer-ros-for-the-toyota-hsr.readthedocs.io/en/latest/?badge=latest
+
+Building & Installation
+=======================
+
+Installation has been tested on Ubuntu 14.04 (Trusty) with ROS Indigo, but may
+also work on Ubuntu 16.04 (Xenial) with ROS Kinetic. We recommend using
+`wstool <http://wiki.ros.org/wstool>`_ and
+`rosdep <http://wiki.ros.org/rosdep>`_. For faster builds, we also recommend
+using `Ninja <https://ninja-build.org>`_.
+
+  .. code-block:: bash
+
+    # Install wstool and rosdep.
+    sudo apt-get update
+    sudo apt-get install -y python-wstool python-rosdep ninja-build
+
+    # Create a new workspace in 'catkin_ws'.
+    mkdir catkin_ws
+    cd catkin_ws
+    wstool init
+
+    # Merge the cartographer_ros rosinstall file and fetch code for dependencies.
+    wstool merge https://raw.githubusercontent.com/googlecartographer/cartographer_toyota_hsr/master/cartographer_toyota_hsr.rosinstall
+    wstool update
+
+    # Install deb dependencies.
+    rosdep update
+    rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y
+
+    # Build and install.
+    catkin_make_isolated --install --use-ninja
+    source install_isolated/setup.bash
