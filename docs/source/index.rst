@@ -30,24 +30,6 @@ repository provides Cartographer SLAM for the `Toyota HSR`_ via
 .. _SLAM: https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping
 .. _Toyota HSR: http://www.toyota-global.com/innovation/partner_robot/family_2.html
 
-Contributing
-============
-
-You can find information about contributing to Cartographer ROS's Toyota HSR
-support at our `Contribution page`_.
-
-.. _Contribution page: https://github.com/googlecartographer/cartographer_toyota_hsr/blob/master/CONTRIBUTING.md
-
-.. |build| image:: https://travis-ci.org/googlecartographer/cartographer_toyota_hsr.svg?branch=master
-    :alt: Build Status
-    :scale: 100%
-    :target: https://travis-ci.org/googlecartographer/cartographer_toyota_hsr
-
-.. |docs| image:: https://readthedocs.org/projects/google-cartographer-ros-for-the-toyota-hsr/badge/?version=latest
-    :alt: Documentation Status
-    :scale: 100%
-    :target: https://google-cartographer-ros-for-the-toyota-hsr.readthedocs.io/en/latest/?badge=latest
-
 Building & Installation
 =======================
 
