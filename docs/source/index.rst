@@ -50,7 +50,7 @@ using `Ninja <https://ninja-build.org>`_.
     cd catkin_ws
     wstool init src
 
-    # Merge the cartographer_ros rosinstall file and fetch code for dependencies.
+    # Merge the cartographer_toyota_hsr.rosinstall file and fetch code for dependencies.
     wstool merge -t src https://raw.githubusercontent.com/googlecartographer/cartographer_toyota_hsr/master/cartographer_toyota_hsr.rosinstall
     wstool update -t src
 
