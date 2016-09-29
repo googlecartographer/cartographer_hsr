@@ -56,7 +56,7 @@ using `Ninja <https://ninja-build.org>`_.
 
     # Install deb dependencies.
     rosdep update
-    rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y
+    rosdep install --from-paths src --ignore-src -r --rosdistro=${ROS_DISTRO} -y
 
     # Build and install.
     catkin_make_isolated --install --use-ninja
