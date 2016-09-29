@@ -36,7 +36,7 @@ options = {
   pose_publish_period_sec = 5e-3,
 }
 
-options.map_builder.use_trajectory_builder_2d = true
+MAP_BUILDER.use_trajectory_builder_2d = true
 TRAJECTORY_BUILDER_2D.use_imu_data = false  -- TODO(macmason): Enable the IMU.
 TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true
 
