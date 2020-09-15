@@ -45,7 +45,7 @@ Contributing
 You can find information about contributing to Cartographer ROS's Toyota HSR
 support at `our Contribution page`_.
 
-.. _our Contribution page: https://github.com/googlecartographer/cartographer_toyota_hsr/blob/master/CONTRIBUTING.md
+.. _our Contribution page: https://github.com/cartographer-project/cartographer/blob/master/CONTRIBUTING.md
 
 .. |build| image:: https://travis-ci.org/googlecartographer/cartographer_toyota_hsr.svg?branch=master
     :alt: Build Status
