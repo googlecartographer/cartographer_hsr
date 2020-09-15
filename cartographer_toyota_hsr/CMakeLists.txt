@@ -29,6 +29,8 @@ google_enable_testing()
 
 find_package(LuaGoogle REQUIRED)
 
+find_package(Boost REQUIRED COMPONENTS system iostreams)
+
 find_package(catkin REQUIRED COMPONENTS ${PACKAGE_DEPENDENCIES})
 
 # Override Catkin's GTest configuration to use GMock.
