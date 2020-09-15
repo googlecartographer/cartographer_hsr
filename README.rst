@@ -26,8 +26,8 @@ and mapping (`SLAM`_) in 2D and 3D across multiple platforms and sensor
 configurations. This repository provides Cartographer SLAM for the `Toyota
 HSR`_ via `Cartographer ROS`_.
 
-.. _Cartographer: https://github.com/googlecartographer/cartographer
-.. _Cartographer ROS: https://github.com/googlecartographer/cartographer_ros
+.. _Cartographer: https://github.com/cartographer-project/cartographer
+.. _Cartographer ROS: https://github.com/cartographer-project/cartographer_ros
 .. _SLAM: https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping
 .. _Toyota HSR: http://www.toyota-global.com/innovation/partner_robot/family_2.html
 
@@ -45,12 +45,12 @@ Contributing
 You can find information about contributing to Cartographer ROS's Toyota HSR
 support at `our Contribution page`_.
 
-.. _our Contribution page: https://github.com/googlecartographer/cartographer_toyota_hsr/blob/master/CONTRIBUTING.md
+.. _our Contribution page: https://github.com/cartographer-project/cartographer_toyota_hsr/blob/master/CONTRIBUTING.md
 
-.. |build| image:: https://travis-ci.org/googlecartographer/cartographer_toyota_hsr.svg?branch=master
+.. |build| image:: https://travis-ci.org/cartographer-project/cartographer_toyota_hsr.svg?branch=master
     :alt: Build Status
     :scale: 100%
-    :target: https://travis-ci.org/googlecartographer/cartographer_toyota_hsr
+    :target: https://travis-ci.org/cartographer-project/cartographer_toyota_hsr
 
 .. |docs| image:: https://readthedocs.org/projects/google-cartographer-ros-for-the-toyota-hsr/badge/?version=latest
     :alt: Documentation Status
@@ -60,4 +60,4 @@ support at `our Contribution page`_.
 .. |license| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
      :alt: Apache 2 license.
      :scale: 100%
-     :target: https://github.com/googlecartographer/cartographer_toyota_hsr/blob/master/LICENSE
+     :target: https://github.com/cartographer-project/cartographer_toyota_hsr/blob/master/LICENSE
