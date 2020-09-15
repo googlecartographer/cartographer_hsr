@@ -25,8 +25,8 @@ and mapping (`SLAM`_) in 2D and 3D across multiple platforms and sensor
 configurations. This repository provides Cartographer SLAM for the `Toyota
 HSR`_ via `Cartographer ROS`_.
 
-.. _Cartographer: https://github.com/googlecartographer/cartographer
-.. _Cartographer ROS: https://github.com/googlecartographer/cartographer_ros
+.. _Cartographer: https://github.com/cartographer-project/cartographer
+.. _Cartographer ROS: https://github.com/cartographer-project/cartographer_ros
 .. _SLAM: https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping
 .. _Toyota HSR: http://www.toyota-global.com/innovation/partner_robot/family_2.html
 
@@ -51,7 +51,7 @@ using `Ninja <https://ninja-build.org>`_.
     wstool init src
 
     # Merge the cartographer_toyota_hsr.rosinstall file and fetch code for dependencies.
-    wstool merge -t src https://raw.githubusercontent.com/googlecartographer/cartographer_toyota_hsr/master/cartographer_toyota_hsr.rosinstall
+    wstool merge -t src https://raw.githubusercontent.com/cartographer-project/cartographer_toyota_hsr/master/cartographer_toyota_hsr.rosinstall
     wstool update -t src
 
     # Install deb dependencies.

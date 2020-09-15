@@ -22,8 +22,7 @@ cache:
     - /home/travis/docker/
 
 env:
-  - ROS_RELEASE=indigo DOCKER_CACHE_FILE=/home/travis/docker/indigo-cache.tar.gz
-  - ROS_RELEASE=kinetic DOCKER_CACHE_FILE=/home/travis/docker/kinetic-cache.tar.gz
+  - ROS_RELEASE=noetic DOCKER_CACHE_FILE=/home/travis/docker/noetic-cache.tar.gz
 
 before_install:
   - scripts/check_access_token.sh $GITHUB_TOKEN
@@ -31,7 +30,7 @@ before_install:
 
 install: true
 script:
-  - git clone https://github.com/googlecartographer/cartographer_ros.git
+  - git clone https://github.com/cartographer-project/cartographer_ros.git
   - docker build cartographer_ros -t cartographer_ros:${ROS_RELEASE} -f cartographer_ros/Dockerfile.${ROS_RELEASE} --build-arg github_token=${GITHUB_TOKEN}
   - rm -rf cartographer_ros
   - docker build ${TRAVIS_BUILD_DIR} -t cartographer_toyota_hsr:${ROS_RELEASE} -f Dockerfile.${ROS_RELEASE} --build-arg github_token=${GITHUB_TOKEN}
